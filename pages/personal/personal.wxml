@@ -1,0 +1,48 @@
+<!--pages/personal/personal.wxml-->
+<view class='my_all'>
+
+  <!-- top顶部 -->
+  <view class='my_top'> 
+    <image src='../../userimage/2.png'></image>
+    <button> 登录 </button>
+    <!-- <view class='my_name'>{{name}}123</view> -->
+  </view>
+
+  <!-- 我的订单 -->
+  <view class='my_OC'>
+    <text >我的订单</text>
+    <image src="/我的/右拷贝@2x.png" >
+     
+    </image>
+  </view>
+
+  <!-- 四图标 -->
+  <view class='my_OClist'>
+     <view> <image src='/我的/形状7@2x.png' ></image>
+      <text class='OC1'>待付款</text>   
+     </view>
+     <view> <image src='/我的/形状6@2x.png' ></image>
+      <text class='OC1'>待发货</text>   
+     </view>
+     <view> <image src='/我的/形状8@2x.png' ></image>
+      <text class='OC1'>已发货</text>   
+     </view>
+     <view> <image src='/我的/形状10@2x.png' ></image>
+      <text class='OC1'>售后服务</text> 
+     </view>
+  </view>
+
+
+ <!-- 优惠卷等其它列 my_otherlist -->
+ <view class='my_Otherlist'>
+  <block wx:for="{{imgUrls}}">
+      <view class='my_otherlist'>
+        <image src="{{item.src}}" class='img1' />
+        <text>{{item.text}}</text>
+        <image src="/我的/右拷贝@2x.png"  class='img2'></image>     
+      </view>
+      
+  </block>
+</view>  
+</view>
+

@@ -1,0 +1,67 @@
+<!--pages/classify/classify.wxml-->
+<view class='MeatM_All'>
+  <!-- 图片展示部分 -->
+  <view class='MeatM_Img'>
+     <!-- 图片轮换 -->
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class='MeatM_img'/>
+        </swiper-item>
+      </block>
+    </swiper>
+     <!-- 点部分的设置 -->
+    <view class="dots">     
+      <block wx:for="{{slider}}" wx:key="unique">  
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+      </block>  
+    </view> 
+  </view>
+  <!-- 价格标题 -->
+  <view class='MeatM_title'>
+      <!-- 价格 -->
+    <view class='MeatM_Price'>
+      <text>￥48</text>
+      <text class='MeatM_OldPrice'>￥699</text>
+    </view>
+      <!-- 名称 -->
+    <view class='MeatM_Name'>
+      <image src='/绞肉机/组4@2x.png'></image>
+      <text >三的 SD-JR02绞肉机家用电动小型搅馅切菜打碎</text>
+    </view>
+  </view>
+  <!-- 其它类 -->
+  <view class='MeatM_Other'>
+    <block wx:for="{{test_othet}}">
+      <view class='MeatM_other'>
+        <text>{{item.text1}}</text>
+        <text>{{item.text2}}</text> 
+        <image src='{{item.img}}'></image>   
+      </view>
+    </block>
+  </view>
+  <!-- 图文详情 -->
+  <view class='MeatM_Desc'>
+    <image src='/绞肉机/细节1@2x.png'></image>
+  </view>
+  <!-- 底部：收藏 购物车 加入购物车 立刻购买 -->
+  <view class='MeatM_Bottom'>
+    <!-- 底部：收藏 购物车 -->
+      <view class='MeatM_collect'>                         <!-- 欠js:点击，星型变粉色 -->
+        <image src='/绞肉机/形状1@2x.png'></image>
+        <view><text>收藏</text></view>
+      </view>
+      <view class='MeatM_shoppingCart'>
+        <image  src='/绞肉机/03232@2x.png'></image>
+        <view><text>购物车</text></view>
+      </view>
+    <!-- 底部：加入购物车 立刻购买 -->
+      <view class='MeatM_addCart'>加入购物车</view>
+      <view class='MeatM_pay'>立刻购买</view>
+    
+  </view>
+</view>
+
+
+

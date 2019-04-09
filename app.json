@@ -1,0 +1,46 @@
+{
+ "pages": [
+  "pages/home/home",
+  "pages/product/product",
+  "pages/classify/classify",
+  "pages/cart/cart",
+  "pages/personal/personal",
+  "pages/test/test"
+],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Box 电器",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "image/6.png",
+        "selectedIconPath": "image/5.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品",
+        "iconPath": "image/4.png",
+        "selectedIconPath": "image/1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "image/3.png",
+        "selectedIconPath": "image/7.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "image/8.png",
+        "selectedIconPath": "image/2.png"
+      }
+    ]
+  }
+}

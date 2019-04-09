@@ -1,0 +1,106 @@
+<view class='main'>
+<!-- top-->
+    <view><image src='../../image/1.1.png' style='width:100%;height:375rpx;'></image></view>
+<!--先领券再购物-->  
+<view class='ticket'><image src='../../image/1.2.png' style='width:100%;height:180rpx;'></image></view>       
+  <view class='ticket_top'>
+    <view class='ticket_top_top' style='width:676rpx'>
+      <block wx:for="{{ticket_top_image}}">
+        <view><image src='{{item}}' style='width:161rpx;height:232rpx;'></image></view>
+      </block>
+    </view>
+    <view class='ticket_end'><image src='../../image/组5@2x.png' style='width:668rpx;height:250rpx;margin-top:20rpx;padding-left:0rpx;padding-right:16rpx;magin-bottom:'></image>
+    <view class='ticket_end_end'><image src='{{pobiji}}'style='width:159rpx;height:247rpx;'></image></view>
+  </view>
+</view>
+<!-- 镇店之宝-->
+<view class='ticket_ticket'><image src='../../image/组-2-副本-拷贝@2x.png'   style='width:100%;height:165rpx;'>
+</image></view>
+<view>
+  <view class='ticket_bootom'> 
+    <image src='../../image/镇店之宝/1.png' class='image0'></image>
+      <image src='{{jiaorouji}}' class='image1'></image>
+        <view class='describe'>
+          <view style='margin-bottom:4rpx;'><text class='text1'>{{descripe_text1}}</text></view>
+          <view style='margin-bottom:8rpx;'><text class='text2'>{{descripe_text2}}</text></view>
+        <view class='yuanjiaojz'>
+          <view><text class='text3'>{{descripe_text3}}</text><image src='../../image/圆角矩形2副本@2x.png'class='image_yj'></image></view>
+          <view><text class='text4'>{{descripe_text4}}</text>
+            <image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; margin-right:16rpx;'></image></view>
+          <view><text class='text5'>{{descripe_text5}}</text><image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; '></image></view>
+        </view>
+          <view><text class='text6'>促销价：￥</text></view>
+          <view ><text class='text7'>{{price}}</text><button type='default' size="mini" style='background-color: yellow;' class='button'><text style='font-size:24rpx;color:#ffffff;'>立即抢购</text> </button></view>
+               </view>
+          </view>
+          <view class='ticket_bootom'>
+               <image src='../../image/镇店之宝/2.png' class='image0'></image>
+               <image src='{{pobiji}}' class='image2' ></image>
+                <view class='describe1'>
+                   <view style='margin-bottom:4rpx;'><text class='text1'>{{descripe_text1}}</text></view>
+                   <view style='margin-bottom:8rpx;'><text class='text2'>{{descripe_text2}}</text></view>
+                   <view class='yuanjiaojz'>
+                         <view><text class='text3'>{{descripe_text3}}</text><image src='../../image/圆角矩形2副本@2x.png' class='image_yj'></image></view>
+                         <view><text class='text4'>{{descripe_text4}}</text>
+                         <image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; margin-right:16rpx;'></image></view>
+                         <view><text class='text5'>{{descripe_text5}}</text><image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; '></image></view>
+                          </view>
+                   <view><text class='text6'>促销价：￥</text></view>
+                   <view ><text class='text7'>{{price}}</text><button type='default' size="mini" style='background-color: yellow;' class='button'><text style='font-size:24rpx;color:#ffffff;'>立即抢购</text> </button></view>
+               </view>
+          </view>
+          <view class='ticket_bootom'><image src='../../image/镇店之宝/3.png' class='image0'></image>
+               <image src='{{zhazhiji}}' class='image1'></image>
+                <view class='describe'>
+                   <view style='margin-bottom:4rpx;'><text class='text1'>{{descripe_text1}}</text></view>
+                   <view style='margin-bottom:8rpx;'><text class='text2'>{{descripe_text2}}</text></view>
+                   <view class='yuanjiaojz'>
+                         <view><text class='text3'>{{descripe_text3}}</text><image src='../../image/圆角矩形2副本@2x.png' class='image_yj'></image></view>
+                         <view><text class='text4'>{{descripe_text4}}</text>
+                         <image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; margin-right:16rpx;'></image></view>
+                         <view><text class='text5'>{{descripe_text5}}</text><image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; '></image></view>
+                   </view>
+                   <view><text class='text6'>促销价：￥</text></view>
+                   <view ><text class='text7'>{{price}}</text><button type='default' size="mini" style='background-color: yellow;' class='button'><text style='font-size:24rpx;color:#ffffff;'>立即抢购</text></button></view>
+               </view>     
+          </view>
+          <view class='ticket_bootom'><image src='../../image/镇店之宝/4.png' class='image0'></image>
+               <image src='{{pobiliao}}' class='image2'></image>
+                <view class='describe1'>
+                   <view style='margin-bottom:4rpx;'><text class='text1'>{{descripe_text1}}</text></view>
+                   <view style='margin-bottom:8rpx;'><text class='text2'>{{descripe_text2}}</text></view>
+                   <view class='yuanjiaojz'>
+                         <view><text class='text3'>{{descripe_text3}}</text><image src='../../image/圆角矩形2副本@2x.png' class='image_yj'></image></view>
+                         <view><text class='text4'>{{descripe_text4}}</text>
+                         <image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; margin-right:16rpx;'></image></view>
+                         <view><text class='text5'>{{descripe_text5}}</text><image src='../../image/圆角矩形2副本@2x.png' style='width:72rpx;height:72rpx; '></image></view>
+                   </view>
+                   <view><text class='text6'>促销价:￥</text></view>
+                   <view ><text class='text7'>{{price}}</text><button type='default' size="mini" style='background-color: yellow;' class='button'><text style='font-size:24rpx;color:#ffffff;'>立即抢购</text></button></view>
+               </view>
+         </view>
+      </view>
+<!-- 爆款推荐-->  
+    <view><image src='../../image/组-2-副本-拷贝-2@2x.png'   
+           style='width:100%;height:165rpx;'></image>
+    </view>
+
+        <view>
+           <view wx:for="{{baokuanimage}}">
+              <view>
+                  <view class='bottom_image1' >
+                      <view wx:for="{{item}}" >
+                          <view><image src='../../image/矩形-1@2x.png' class='bkimage1'></image>
+                                <image class='bkimage{{index%2==0?"0":"2"}}' src='{{item.image}}'></image> 
+                                <view class='mot_t{{index%2==0?"0":"1"}}'>
+                                          <view class='mot_text1'>
+                                               <view class='bot_text2'> 原价2199</view>
+                                              <view class='bot_text3'>促销价</view></view>
+                                          <view class='bot_text4'>{{item.price}}</view></view>
+                                </view> 
+                          </view>    
+                      </view>    
+              </view>
+            </view>
+        </view>
+</view>

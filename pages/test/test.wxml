@@ -1,0 +1,22 @@
+<!--pages/test/test.wxml-->
+
+<view class="section">
+    <!-- 左侧类型 -->
+    <scroll-view scroll-y="true" class="left">
+        <view wx:for="{{types}}" wx:key="typeId" data-type-id="{{item.id}}" bindtap="tapType" class="{{item.id == currType ? 'active' : ''}}" style="font-size:33rpx">
+            {{item.name}}
+        </view>
+    </scroll-view>
+     <!-- 右侧数据 -->
+    <scroll-view scroll-y="true" class="right">
+        <view class="typeTree">
+            <view  class="brand" wx:for="{{typeTree}}" wx:for-item="data">  
+            <!-- wx:for是循环数组，wx:for-item即给列表赋别名 -->
+                <navigator url="../listdetail/listdetail?cat_id={{data.id}}" wx:key="typeId" class="item">
+                    <image src="{{data.src}}"></image>
+                    <text>111{{data.name}}</text>
+                </navigator>
+            </view>
+        </view>
+    </scroll-view>
+</view>

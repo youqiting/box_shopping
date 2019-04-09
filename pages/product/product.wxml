@@ -1,0 +1,42 @@
+<!-- 导航条-->
+<view class='search'>
+  <view class='search_top'>
+    <text bindtap='switchsearch'>绞肉机  </text>
+  </view>
+  <view class='search_top'>
+    <text bindtap='switchsearch'>破壁机</text>
+  </view>
+  <view class='search_top'>
+    <text bindtap='switchsearch'>榨汁机</text>
+  </view>
+  <view class='search_top'>
+    <text bindtap='switchsearch'>配件</text>
+  </view>
+</view>
+<!-- 产品-->
+<view class='tab'>
+  <view class='zonghe'>综合</view>
+  <view class='xiaoliang'>销量</view>
+  <view class='jiage'>价格</view>
+</view>
+
+<!--chanpin-->
+<view>
+  <block wx:for="{{display_image}}">
+    <view class='product' bindtap='loadproduct' id='{{index}}'>
+      <view class='product_left'>
+        <image src='{{item.product_image}}' class='image3'></image>
+      </view>
+      <view class='product_right'>
+        <view class='product_text'>{{item.describe}}</view>
+        <view class='right_mid'>
+          <image src='{{item.image1}}' class='image4'></image>
+          <image src='{{item.image2}}' class='image5'></image>
+        </view>
+        <view class='product_price'>
+          <text style='font-size:22rpx;color:rgbrgb(241,6,55);'>￥</text> {{item.product_price}}
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
