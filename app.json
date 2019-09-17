@@ -1,17 +1,17 @@
 {
- "pages": [
-  "pages/home/home",
-  "pages/product/product",
-  "pages/classify/classify",
-  "pages/cart/cart",
-  "pages/personal/personal",
-  "pages/test/test"
-],
-  "window":{
-    "backgroundTextStyle":"light",
+  "pages": [
+    "pages/home/home",
+    "pages/product/product",
+    "pages/classify/classify",
+    "pages/cart/cart",
+    "pages/personal/personal",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "Box 电器",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
     "color": "#000",
@@ -42,5 +42,6 @@
         "selectedIconPath": "image/2.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
